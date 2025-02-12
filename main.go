@@ -11,8 +11,7 @@ import (
 GOARCH=wasm GOOS=js go build -o /test-app/web/app.wasm
 
 # Build and generate static website:
-go build
-./hello
+go run main.go
 */
 
 // hello is a component that displays a simple "Hello World!". A component is a
@@ -25,7 +24,7 @@ type hello struct {
 // The Render method is where the component appearance is defined. Here, a
 // "Hello World!" is displayed as a heading.
 func (h *hello) Render() app.UI {
-	return app.H1().Text("Hello World!")
+	return app.H1().Text("Hello World from go-app!")
 }
 
 func main() {

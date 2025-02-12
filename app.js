@@ -13,7 +13,7 @@ var goappOnAppInstallChange = function () {
   goappAppInstallChangedBeforeWasmLoaded = true;
 };
 
-const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/epsniff/epsniff.github.io","GOAPP_STATIC_RESOURCES_URL":"/epsniff/epsniff.github.io/web","GOAPP_VERSION":"2fad95391b01f3c8c52e6ad69a2614de8ce13b63"};
+const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/epsniff/epsniff.github.io","GOAPP_STATIC_RESOURCES_URL":"/epsniff/epsniff.github.io/web","GOAPP_VERSION":"4d63aa8b746f076292ed6bf089da8f49d381b913"};
 const goappLoadingLabel = "{progress}%";
 const goappWasmContentLength = "";
 const goappWasmContentLengthHeader = "";
