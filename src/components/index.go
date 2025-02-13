@@ -9,5 +9,13 @@ type Index struct {
 }
 
 func (h *Index) Render() app.UI {
-	return app.H1().Text("Hello World 42!")
+	return app.Div().
+		Style("background-color", "#f0f0f0").
+		Style("padding", "20px").
+		Style("text-align", "center").
+		Body(
+			app.H1().Text("Go App Test"),
+			app.P().Text("Welcome to my personal website!"),
+			app.A().Href("/debug").Text("Debug"),
+		)
 }
