@@ -8,7 +8,8 @@ import (
 
 /*
 GOARCH=wasm GOOS=js go build -o  ./web-app/app.wasm # Build app.wasm:
-go run main.go # Build and generate static website:
+go run main.go # Build and generate static website
+git add . && git commit -m "Update" && git push # Push to github
 */
 
 // hello is a component that displays a simple "Hello World!". A component is a
@@ -21,8 +22,8 @@ type hello struct {
 // The Render method is where the component appearance is defined. Here, a
 // "Hello World!" is displayed as a heading.
 func (h *hello) Render() app.UI {
-	app.Logf("Hello World (log) 222!")
-	return app.H1().Text("Hello World 222!")
+	app.Logf("Hello World (log) 333!")
+	return app.H1().Text("Hello World 333!")
 }
 
 // hello is a component that displays a simple "Hello World!". A component is a
