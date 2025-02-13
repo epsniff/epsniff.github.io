@@ -21,7 +21,7 @@ type hello struct {
 // The Render method is where the component appearance is defined. Here, a
 // "Hello World!" is displayed as a heading.
 func (h *hello) Render() app.UI {
-	log.Default().Println("this is just a test log message.")
+	app.Logf("Hello World (log) 222!")
 	return app.H1().Text("Hello World 222!")
 }
 
