@@ -24,7 +24,6 @@ func (h *LineCombo) SetLineChart(l *charts.Line) *LineCombo {
 
 func (a *LineCombo) Render() app.UI {
 	return app.Div().Class("item").
-		ID(a.lineChart.ID).
 		Style("width", a.lineChart.Initialization.Width).
 		Style("height", a.lineChart.Initialization.Height)
 }
