@@ -10,7 +10,7 @@ import (
 func main() {
 	app.Route("/", func() app.Composer { return &components.Index{} })
 	app.Route("/debug", func() app.Composer { return &components.Debug{} })
-	app.Route("/line", func() app.Composer { return &components.LineCombo{} })
+	app.Route("/line", func() app.Composer { return components.NewLineCombo().SetLineChart(components.NewLine()) })
 	app.RunWhenOnBrowser()
 
 	err := app.GenerateStaticWebsite(".", &app.Handler{

@@ -10,6 +10,10 @@ import (
 	"golang.org/x/exp/rand"
 )
 
+func NewLineCombo() *LineCombo {
+	return &LineCombo{}
+}
+
 type LineCombo struct {
 	app.Compo
 
