@@ -17,5 +17,6 @@ func (h *Index) Render() app.UI {
 			app.H1().Text("Go App Test"),
 			app.P().Text("Welcome to my personal website!"),
 			app.A().Href("/debug").Text("Debug"),
+			app.A().Href("/line").Text("Line Chart"),
 		)
 }
