@@ -17,6 +17,10 @@ func main() {
 		Name:        "Eric Sniff",
 		Description: "Eric Sniff personal website",
 		Resources:   app.GitHubPages("epsniff/epsniff.github.io"),
+		Scripts: []string{
+			"https://go-echarts.github.io/go-echarts-assets/assets/echarts.min.js",
+			"https://go-echarts.github.io/go-echarts-assets/assets/themes/westeros.js",
+		},
 	})
 
 	if err != nil {
